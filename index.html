@@ -14,7 +14,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -36,6 +38,15 @@
 </head>
 
 <body>
+  <!-- ======= Modal====== -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="container">
+        <img src="./assets/img/logo.jpg" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+      
 
   <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
@@ -45,10 +56,12 @@
 
     <nav class="nav-menu">
       <ul>
-        <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#portfolio"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+        <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
+        <li><a href="#video"> <i class='bx bx-movie-play'></i><span>Videos</span></a></li>
+        <li><a href="#portfolio"><i class='bx bx-game'></i> <span>Juego</span></a></li>
+        <li><a href="#control"><i class='bx bxs-keyboard'></i><span>Controles</span></a></li>
+        <li><a href="#source"><i class='bx bx-code-block'></i> <span>Codigo Fuente</span></a></li>
         <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-        
       </ul>
     </nav><!-- .nav-menu -->
 
@@ -58,102 +71,174 @@
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>The Last Fish</h1>
-      <p>This is <span class="typed" data-typed-items="Amazing, Funny, Nice"></span></p>
+      <p>Es un juego <span class="typed" data-typed-items="Divertido, Interesante, Facil"></span></p>
       <br>
     </div>
   </section><!-- End Hero -->
 
   <main id="main">
-      <!-- ======= Portfolio Section ======= -->
-      <section id="portfolio" class="portfolio ">
-        <div class="container">
-          <div class="section-title">
-            <h2>The Last Fish</h2>
-          </div>
-          <div class="row">
-            <div class="col-md-12"></div>
-                <h2 class="portfolio-title text-center">Capturas</h2>
-                <br>
-                <div class="owl-carousel portfolio-details-carousel">
-                  <img src="./assets/img/fondo.jpg" class="img-fluid" alt="">
-                  <img src="./assets/img/fondo2.jpg" class="img-fluid" alt="">
-                  <img src="./assets/img/fondo3.jpg" class="img-fluid" alt="">
-                  <img src="./assets/img/fondo4.jpg" class="img-fluid" alt="">
-                </div>
-            </div>
+    <!-- ======= video Section ======= -->
+    <section id="video" class="d-flex flex-column justify-content-center about">
+      <div class="container content" data-aos="zoom-in" data-aos-delay="100">
+        <div class="section-title">
+          <h2>Videos</h2>
+        </div>
+        <h3>Corto Animado</h3>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CKzcuhyo_KU"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
 
-            <div class="col-md-12 mt-3">
-              <table class="table table-hover table-borderless table-responsive">
-                <thead>
-                  <tr>
-                    <th scope="col"></th>
-                    <th scope="col">Nivel 1</th>
-                    <th scope="col">Nivel 2</th>
-                    <th scope="col">Nivel 3</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">Detalles</th>
-                    <td>Estilo de juego de plataforma, puedes saltar y correr</td>
-                    <td>Estas dentro del agua, evita las focas</td>
-                    <td>Sigues en el agua, evita las orcas y basura</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Objetivos</th>
-                    <td>Llegar a la bandera</td>
-                    <td>Llegar a la bandera</td>
-                    <td>Encontrar al pez dorado</td>
-                  </tr>
-                  <tr class="pt-5 table-dark">
-                    <th scope="row">Links</th>
-                    <td colspan="2">
-                      <p>Puedes jugar en linea, incluso desde el celular, pero de lo advierto tiene bugs</p>
-                      <div class="d-grid gap-2 col-6 mx-auto">
-                        <a href="./game/Lastfish.html" class="btn btn-outline-primary btn-lg">Iniciar Juego</a>
-                      </div>
-                    </td>
-                    <td>
-                      <p> Alternativa para windows, descargalo y pruebalo a 60 fps, igual tiene bugs...</p>
-                      <a href="./ejecutable/TheLastFish.rar"  class="btn btn-outline-primary btn-lg" download="TheLastFish.rar">Descargar Archivo</a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="container mt-5 pt-5">
-              <div class="section-title">
-                <h2>Controles</h2>
-              </div>
-              <img src="./assets/img/controll.jpg" class="img-fluid" alt="">
-              <div class="container pt-5 text-center">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">Tecla</th>
-                      <th scope="col">Accion</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>flecha izquierda</td>
-                      <td>moverse hacia la izquierda</td>
-                    </tr>
-                    <tr>
-                      <td>flecha derecha</td>
-                      <td>moverse hacia la derecha</td>
-                    </tr>
-                    <tr>
-                      <td>espacio</td>
-                      <td>saltar</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+        <br>
+        <br>
+        <h3>Trailer</h3>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XbAce0c-Rpg"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <br>
+      </div>
+    </section><!-- End video -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="about ">
+      <div class="container content">
+        <div class="section-title">
+          <h2>The Last Fish</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-12"></div>
+          <h3>Capturas</h3>
+          <br>
+          <div class="owl-carousel portfolio-details-carousel">
+            <img src="./assets/img/fondo.jpg" class="img-fluid" alt="">
+            <img src="./assets/img/fondo2.jpg" class="img-fluid" alt="">
+            <img src="./assets/img/fondo3.jpg" class="img-fluid" alt="">
+            <img src="./assets/img/fondo4.jpg" class="img-fluid" alt="">
           </div>
         </div>
+        <h3>Recomendaciones</h3>
+        <div class="container">
+          <p>El juego esta diseñado para una pantalla horizontal, se puede jugar de manera vertical, sin embargo la
+            experiencia de juego se vera afectada</p>
+          <p>Si estas dentro un movil, puedes probarlo, mas no se garantiza que funcione en todos los dispositivos,
+            suerte!</p>
+          <p>Recuerda tener paciencia para jugar la version web</p>
+        </div>
+        <div class="col-md-12 mt-3">
+          <table class="table table-hover table-borderless table-responsive">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Nivel 1</th>
+                <th scope="col">Nivel 2</th>
+                <th scope="col">Nivel 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Detalles</th>
+                <td>Estilo de juego de plataforma, puedes saltar y correr</td>
+                <td>Estas dentro del agua, evita las focas</td>
+                <td>Sigues en el agua, evita las orcas y basura</td>
+              </tr>
+              <tr>
+                <th scope="row">Objetivos</th>
+                <td>Llegar a la bandera</td>
+                <td>Llegar a la bandera</td>
+                <td>Encontrar al pez dorado</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <h3>Juego</h3>
+        <div>
+
+          <table class="table table-hover table-responsive">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">WEB</th>
+                <th scope="col">Desktop</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Links</th>
+                <td>
+                  <p>Puedes jugar en linea, incluso desde el celular, pero te lo advierto tiene bugs</p>
+                  <div class="d-grid gap-2 col-6 mx-auto">
+                    <a href="./game/Lastfish.html" class="btn btn-outline-primary btn-lg">Iniciar Juego</a>
+                  </div>
+                </td>
+                <td>
+                  <p> Alternativa para windows, descargalo y pruebalo a 60 fps, igual tiene bugs...</p>
+                  <a href="./ejecutable/TheLastFish.rar" class="btn btn-outline-primary btn-lg"
+                    download="TheLastFish.rar">Descargar Archivo</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+      </div>
     </section><!-- End Portfolio Section -->
+    <!-- ======= controles Section ======= -->
+    <section id="control" class="d-flex flex-column justify-content-center">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <div class="container mt-5 pt-5">
+          <div class="section-title">
+            <h2>Controles</h2>
+            <p>Si juegas desde el movil, esta parte no es necesaria, puedes usar los controles que aparecen en pantalla
+            </p>
+          </div>
+          <img src="./assets/img/controll.jpg" class="img-fluid" alt="">
+          <div class="container pt-5 text-center">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Tecla</th>
+                  <th scope="col">Accion</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>flecha izquierda</td>
+                  <td>moverse hacia la izquierda</td>
+                </tr>
+                <tr>
+                  <td>flecha derecha</td>
+                  <td>moverse hacia la derecha</td>
+                </tr>
+                <tr>
+                  <td>espacio</td>
+                  <td>saltar</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section><!-- End controles -->
+
+    <!-- ======= source Section ======= -->
+    <section id="source" class="d-flex flex-column justify-content-center">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <div class="section-title">
+          <h2>Codigo Fuente</h2>
+          <p>Todo el codigo fuente se en encuentra en:</p>
+        </div>
+        <div><a href="https://github.com/RyuYii/TheLastFish-source"><img class="git img-fluid"
+              src="https://levashove.ru/wp-content/uploads/2018/03/github.png" alt=""></a></div>
+        <br>
+      </div>
+    </section><!-- End source -->
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
@@ -161,13 +246,9 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <p>
-            I am a Computer Science student at the Universidad Mayor de San Andres.
-            </p><p>
-            I am a Web developer, I also have knowledge on the subject of information security.
-            </p><p>
-            My favorite programming language is python.</p>
-            <p>I created the game</p>
+          <p>Soy Ruddy Surco, el creador de este juego</p>
+          <p>Soy Estudiante de la carrera de Informatica en la Universidad Mayor de San Andres</p>
+          <p>Acutalmente soy desarrollador web.</p>
         </div>
 
         <div class="row">
@@ -175,33 +256,18 @@
             <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>UI/UX Designer &amp; Web Developer.</h3>
+            <h3>Sobre The Last Fish</h3>
             <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              Este juego fue diseñado pensado en la situacion actual de los pinguinos, que estan sufriendo a causa de
+              los efectos climaticos...
             </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> uknow </li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> this </li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +591 61180993</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>City:</strong> City : La Paz, Bolivia</li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 22</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Student</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>PhEmailone:</strong> ruddysurco30@gmail.com</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
-                </ul>
-              </div>
-            </div>
+
             <p>
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+              Los pinguinos, tal vez solo una mas de las especies afectadas por el cambio climatico, sin embargo, esta es su historia.
             </p>
+            <p>Nos centramos en la vida de una pareja de pinguinos, y como parte de la naturaleza estos tienen un huevo, algo caracteristico de los pinguinos es que la hembra suele ser quien busca el alimento y el macho es quien cuida el huevo, no es el caso de todos los pinguinos, pero si de esta en especifico la raza del pinguino emperador</p>
+            <p>Con todos los cambios y si mencionamos la cantidad de basura que hay en el mundo, ¿Será que mama pinguina pueda llegar a conseguir un pescado?</p>
+            <p>¿Será acaso este el ultimo?</p>
           </div>
         </div>
 
@@ -213,17 +279,18 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Facts</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Estadisticas</h2>
+          <p>Ayudame a mejorar el Juego.</p>
+          <a href="https://forms.gle/qdQy3H8w7oDuJihx9" target="_blank">Valorar Juego</a>
         </div>
 
         <div class="row">
 
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
-              <i class="icofont-simple-smile"></i>
-              <span data-toggle="counter-up">232</span>
-              <p>Happy Clients</p>
+              <i class='bx bxs-bar-chart-square'></i>
+              <span data-toggle="counter-up">150</span>
+              <p>Facil</p>
             </div>
           </div>
 
@@ -231,7 +298,7 @@
             <div class="count-box">
               <i class="icofont-document-folder"></i>
               <span data-toggle="counter-up">521</span>
-              <p>Projects</p>
+              <p>Visitas</p>
             </div>
           </div>
 
@@ -239,15 +306,15 @@
             <div class="count-box">
               <i class="icofont-live-support"></i>
               <span data-toggle="counter-up">1,463</span>
-              <p>Hours Of Support</p>
+              <p>Horas jugadas</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
               <i class="icofont-users-alt-5"></i>
-              <span data-toggle="counter-up">15</span>
-              <p>Hard Workers</p>
+              <span data-toggle="counter-up">200</span>
+              <p>Opiniones</p>
             </div>
           </div>
 
@@ -262,7 +329,26 @@
 
         <div class="section-title">
           <h2>Skills</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Todo que necesitas saber sobre mi...</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> uknow </li>
+              <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> this </li>
+              <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +591 61180993</li>
+              <li><i class="icofont-rounded-right"></i> <strong>City:</strong> City : La Paz, Bolivia</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 22</li>
+              <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Student</li>
+              <li><i class="icofont-rounded-right"></i> <strong>PhEmailone:</strong> ruddysurco30@gmail.com</li>
+              <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
+            </ul>
+          </div>
         </div>
 
         <div class="row skills-content">
@@ -272,21 +358,24 @@
             <div class="progress">
               <span class="skill">HTML <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                </div>
               </div>
             </div>
 
             <div class="progress">
               <span class="skill">CSS <i class="val">50%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
               </div>
             </div>
 
             <div class="progress">
               <span class="skill">JavaScript <i class="val">75%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
               </div>
             </div>
 
@@ -297,21 +386,24 @@
             <div class="progress">
               <span class="skill"> Angular <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
               </div>
             </div>
 
             <div class="progress">
               <span class="skill"> Spring boot <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill"> Python  <i class="val">75%</i></span>
+              <span class="skill"> Python <i class="val">75%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                </div>
               </div>
             </div>
 
@@ -333,7 +425,8 @@
         <a href="https://twitter.com/turpo_s" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="https://www.facebook.com/ruddy.surco" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="https://www.instagram.com/ryuyii999/" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/ruddy-surco-turpo-328658189/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/ruddy-surco-turpo-328658189/" class="linkedin"><i
+            class="bx bxl-linkedin"></i></a>
       </div>
       <div class="copyright">
         &copy; Copyright <strong><span>RyuYii</span></strong>. All Rights Reserved
@@ -366,6 +459,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    $('#exampleModalCenter').modal('show')
+  </script>
 
 </body>
 
